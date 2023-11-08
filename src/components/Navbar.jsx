@@ -22,7 +22,7 @@ export default function Navbar() {
             <form className="" onSubmit={searchSubmitHandler}>
                 <input
 
-                    className="p-1 outline w-[400px]"
+                    className="p-1 outline rounded-sm w-[400px]"
                     required
                     type="search"
                     placeholder="Search Images..."
