@@ -22,20 +22,20 @@ export default function Navbar() {
             <form className="" onSubmit={searchSubmitHandler}>
                 <input
 
-                    className="p-1 outline-none"
+                    className="p-1 outline-none w-[400px]"
                     required
                     type="search"
                     placeholder="Search Images..."
                     onChange={inputChangeHandler}
                     value={input}
                 />
-                <button className="bg-red-600 p-1 text-white" type="submit">Search</button>
-                <div className="suggestions  max-h-[70px] w-[300px] overflow-auto  bg-slate-300 ">
+
+                <div className="suggestions  max-h-[70px] w-[400px] overflow-auto overflow-x-hidden    bg-slate-300 ">
                     {filterSuggestion.map((suggestion, ind) =>
                         suggestions !== input ? (
                             <p
                                 key={ind}
-                                className="suggestion-item  bg-gray-300 w-[244px] px-2 py-1 hover:bg-slate-500"
+                                className="suggestion-item scrollbar-dark  bg-gray-200 hover:text-white w-[400px] px-2 py-1 hover:bg-slate-500"
                                 onClick={() => setInput(suggestion)}
                             >
                                 {suggestion}

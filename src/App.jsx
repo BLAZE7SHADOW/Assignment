@@ -15,7 +15,7 @@ export default function App() {
         dataLength={showImages.length}
         next={fetchMoreData}
         hasMore={showImages.length !== totalImages}
-        loader={<div>Loading...</div>}
+        loader={<div><img className="w-[100px]" src="https://i.gifer.com/ZKZg.gif" alt="" /></div>}
         endMessage={
           <p style={{ textAlign: "center" }}>
             <b>Yay! You have seen it all</b>

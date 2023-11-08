@@ -9,7 +9,7 @@ export default function ImageCard({ image }) {
     return (
         <>
             <div className="image " onClick={() => setIsImageViewer((prev) => !prev)}>
-                <img className="w-[300px] h-[300px] py-2 px-2 my-2  rounded-md border" src={imageLink} />
+                <img className="w-[300px] h-[300px] py-2 px-2 my-2 cursor-pointer  rounded-md border" src={imageLink} />
             </div>
             {isImageViewer && (
                 <ImageViewer
