@@ -25,7 +25,6 @@ const ApiContextProvider = ({ children }) => {
     };
 
     const searchSubmitHandler = (e) => {
-        // e.preventDefault();
         if (input && !suggestions.includes(input)) {
             localStorage.setItem(
                 "searchSuggestion",
