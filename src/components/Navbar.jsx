@@ -18,7 +18,7 @@ export default function Navbar() {
 
     return (
         <header className="bg-gray-100 relative p-5 my-2 flex justify-around items-center flex-wrap">
-            <span className="logo text-6xl py-7 font-bold">PicArts</span>
+            <span className="logo text-6xl py-7 font-bold pr-14">PicArts</span>
             <form className="" onSubmit={searchSubmitHandler}>
                 <input
 
